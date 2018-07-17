@@ -3,7 +3,7 @@ function addElementToBeginningOfArray(array, element) { return ["foo", ...array]
 function destructivelyAddElementToBeginningOfArray(array, element) { return ["foo", ...array] }
 function addElementToEndOfArray(array, element) { return [...array, "foo"] }
 function destructivelyAddElementToEndOfArray(array, element) { array.unshift(); return array }
-function accessElementInArray(array, index) { var numbers = array ; return console.log(numbers[2]) }
+function accessElementInArray(array, index) { console.log(array[2]) }
 function destructivelyRemoveElementFromBeginningOfArray(array) { array.shift(); return array }
 function removeElementFromBeginningOfArray(array) { return array.slice(-2) }
 function destructivelyRemoveElementFromEndOfArray(array) { array.pop(); return array }
